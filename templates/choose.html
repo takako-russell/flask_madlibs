@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    Madlibs
+  </head>
+  <body>
+    <h1>Madlibs</h1>
+    <form action="/form">
+      <select name="story_id">
+        {% for s in stories %}
+        <option value="{{ s.code }}">{{ s.title }}</option>
+        {% endfor %}
+      </select>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
